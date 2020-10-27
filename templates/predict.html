@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>predict image app</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='css/predict.css') }}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+</head>
+
+<body class="body">
+
+    <div class="predict1">
+        <input id="image-selector" type="file">
+        <button type="button" class="btn btn-primary" id="predict-button">Predict</button>
+        <button type="button" class="btn btn-danger" id="product-button">Check Products</button>
+        <p id="one"></p><span id="one-prediction"></span><br>
+        <img id="selected-image" />
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/predict.js') }}"></script>
+</body>
+
+</html>
